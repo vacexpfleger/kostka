@@ -23,11 +23,39 @@
       <h2>Kostky</h2>
       <h6>Václav Pfleger, IT2</h6>
     </header>
-    <main class="container">
-      <div><img src="img/kostka6.png" alt="kostka" id="kostka" ></div>
-      <div id="statistika">Statistika</div>
-      <div><button class="btn btn-danger" id="button">Hrej</button></div>
+    <main class="container-fluid w-80">
+      <div class="row">
+
+
+      <div class="container-fluid col-sm-8 mb-5">
+        <div><img src="img/dice6.png" alt="kostka" id="kostka" ></div>
+      <div><button class="btn btn-danger mt-3" id="buttonPlay">Hrej</button></div>
+      </div>
+
+      <div class="container-fluid col-sm-4">
+        <div class="bg-info text-white p-3 border rounded-lg" id="statistika">
+          <h1>Statistika</h1>
+            <hr />
+          <p id="last">Poslední hod: 0</p>
+          <p id="counter">Počet hodů: 0</p>
+          <p id="summary">Součet: 0</p>
+          <p id="avg">Průměr: 0</p>
+          <p id="max">Maximum: 0</p>
+          <p id="min">Minimum: 0</p>
+            <hr />
+          <button class="btn btn-danger" id="buttonReset">Resetuj</button>
+        </div>
+      </div>
+    </div>
     </main>
+
+    <audio id="shake">
+      <source src="audio/shake.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="roll">
+      <source src="audio/roll.mp3" type="audio/mpeg">
+    </audio>
 
 
     <script
